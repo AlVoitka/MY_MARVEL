@@ -11,6 +11,11 @@
             display: none;
         }
     }
+    .app__title {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 0px;
+    }
 
     .randomchar {
         display: grid;
@@ -22,10 +27,16 @@
             display: none;
     }
     .randomchar__block {
-        padding: 40px 35px;
+        padding: 5px 35px;
         display: grid;
         grid-template-columns: 100%;
         grid-column-gap: 30px;
         column-gap: 10px;
+    }
+    .randomchar__title:nth-child(2) {
+        margin-top: 5px;
+    }
+    .randomchar__static {
+        padding: 10px 35px;
     }
 }

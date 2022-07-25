@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6be433bf.chunk.css",
+    "main.css": "/static/css/main.598a70d7.chunk.css",
     "main.js": "/static/js/main.0a04df9c.chunk.js",
     "main.js.map": "/static/js/main.0a04df9c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.76f7a808.js",
@@ -8,7 +8,7 @@
     "static/js/2.dca3aed8.chunk.js": "/static/js/2.dca3aed8.chunk.js",
     "static/js/2.dca3aed8.chunk.js.map": "/static/js/2.dca3aed8.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.6be433bf.chunk.css.map": "/static/css/main.6be433bf.chunk.css.map",
+    "static/css/main.598a70d7.chunk.css.map": "/static/css/main.598a70d7.chunk.css.map",
     "static/js/2.dca3aed8.chunk.js.LICENSE.txt": "/static/js/2.dca3aed8.chunk.js.LICENSE.txt",
     "static/media/error.62898c88.gif": "/static/media/error.62898c88.gif",
     "static/media/mjolnir.61f31e18.png": "/static/media/mjolnir.61f31e18.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.76f7a808.js",
     "static/js/2.dca3aed8.chunk.js",
-    "static/css/main.6be433bf.chunk.css",
+    "static/css/main.598a70d7.chunk.css",
     "static/js/main.0a04df9c.chunk.js"
   ]
 }
