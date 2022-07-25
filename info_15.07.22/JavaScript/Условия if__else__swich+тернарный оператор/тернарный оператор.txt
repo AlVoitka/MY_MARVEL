@@ -19,3 +19,23 @@ age > 18 ? (
     stop = true,
     alert("Простите, вы ещё так юны!")
 );
+
+
+Реальный пример:
+
+_transformCharacter = (char) => {
+        return {
+            name: char.name,
+            description: char.description ? `${char.description.slice(0, 210)}...` : 'There is no description for this character',
+            thumbnail: char.thumbnail.path + '.' + char.thumbnail.extension,
+            homepage: char.urls[0].url,
+            wiki: char.urls[1].url
+        }
+    }
+
+
+СВойство которое должно подгрузить описание:
+description: char.description ? `${char.description.slice(0, 210)}...` : 'There is no description for this character',
+
+Тут использую тернарный оператор ? :
+если условие выполнитсся и инфа подгрузится, то ок, если нет то будет сообщение - 'There is no description for this character',

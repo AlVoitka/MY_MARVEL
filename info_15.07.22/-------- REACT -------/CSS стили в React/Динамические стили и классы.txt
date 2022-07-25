@@ -115,3 +115,34 @@ const AppFilter = (props) => {
 }
 
 export default AppFilter;
+
+
+
+Еще пример:
+
+
+ render() {
+        const {char: {name, description, thumbnail, homepage, wiki}, loading, error} = this.state;  
+        const errorMessage = error ? <ErrorMassage/> : null;
+        // const spinner = loading ? <Spinner/> : null;
+        // const content = !(loading || error) ? <RandomChar/> : null;
+
+        let imgStyle = {'objectFit' : 'cover'};  ---1. задал переменную
+        if (thumbnail === 'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg') {  --2. если вервер дает ошшибку и назанчена эта картинка
+            imgStyle = {'objectFit' : 'contain'};  --- 3. то к ней применяю стили
+        }
+
+        if(loading) {
+            return <Spinner/>
+        }
+
+        return (
+            <div className="randomchar">
+                {errorMessage}
+                <div className="randomchar__block">
+                    <img src={thumbnail} alt="Random character" className="randomchar__img" style={imgStyle}/>  ----4. вот в доме назначаю стиль
+                    <div className="randomchar__info">
+                        <p className="randomchar__name">{name}</p>
+                        <p className="randomchar__descr">
+                            {description}
+                        </p>

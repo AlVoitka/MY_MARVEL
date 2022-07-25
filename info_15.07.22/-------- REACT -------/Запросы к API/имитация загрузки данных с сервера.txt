@@ -1,10 +1,3 @@
-import { Component } from 'react';
-import MarvelService from '../../services/MarvelService';
-import mjolnir from '../../resources/img/mjolnir.png';
-import Spinner from '../spinner/Spinner';
-import ErrorMassage from '../errorMassage/ErrorMassge';
-
-import './randomChar.scss';
 
 
 class RandomChar extends Component {
@@ -12,7 +5,7 @@ class RandomChar extends Component {
 
     state = {
         char: {},
-        loading: true,
+        loading: true,  ----1. Имею свойство
         error: false 
     }
 
@@ -33,7 +26,7 @@ class RandomChar extends Component {
         this.setState({char, loading: false})
     }
     
-    onCharLoading = () => {
+    onCharLoading = () => { ------3. Создзаю метод который лодинг ставит в тру
         this.setState({
             loading: true
         })
@@ -41,7 +34,7 @@ class RandomChar extends Component {
 
     updateChar = () => {
         const id = Math.floor(Math.random() * (1011400 - 1011000) + 1011000);
-        this.onCharLoading();
+        this.onCharLoading();  -----4. При обновлении контента вызываю этот метод
         this.marvelService
             .getCharacter(id)
             .then(this.onCharLoaded)
@@ -60,7 +53,7 @@ class RandomChar extends Component {
         }
 
         if(loading) {
-            return <Spinner/>
+            return <Spinner/>  ------2. В рендере если тру то активирую компонент со спиннером.
         }
 
         return (

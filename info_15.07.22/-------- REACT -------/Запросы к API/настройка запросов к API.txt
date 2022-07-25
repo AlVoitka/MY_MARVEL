@@ -101,11 +101,14 @@ import MarvelService from './services/MarvelService';
 
 import './style/style.scss';
 
+
 const marvelService = new MarvelService();   - ----- вот создал и в этой переменной будет хранится потомок класса MarvelService
 а далее я обращаюсь к пременной, запускаю метод getAllCharacters()
-и запускаю колбек функцию которая принемает метод res  и в консоль выводит этот результат
+и запускаю колбек функцию которая принемает метод res  и в консоль выводит  результат:
 
-marvelService.getAllCharacters().then(res => console.log(res));
+
+marvelService.getAllCharacters().then(res => console.log(res));  --по сути это строка проверка работоспособности запроса.
+
 
 ReactDOM.render(
   <React.StrictMode>

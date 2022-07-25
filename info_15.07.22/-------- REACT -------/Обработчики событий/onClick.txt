@@ -60,3 +60,12 @@ class MyLearn extends Component {  ----2. делаю его классовым
 }
 
 export default MyLearn;
+
+
+
+/////////////////////////////////////
+Омновление компонента по клику:
+
+<button className="button button__main">
+    <div onClick={this.updateChar} className="inner">try it</div>  --- повесил обработчик и вызвал метод
+</button>
